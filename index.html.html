@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alice 9 ANOS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f6c1d3, #b57a93);
+    text-align:center;
+    color:white;
+}
+
+/* IMAGEM SUPERIOR */
+.topo img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+/* CONTAINER */
+.container{
+    padding:30px 20px 50px;
+}
+
+/* NOME */
+.nome{
+    font-family:'Great Vibes', cursive;
+    font-size:65px;
+    margin:10px 0 0;
+}
+
+.sub{
+    font-size:28px;
+    font-weight:600;
+    margin-top:-10px;
+}
+
+/* LINHAS */
+.linha{
+    width:70%;
+    height:1px;
+    background:white;
+    margin:20px auto;
+    opacity:0.6;
+}
+
+/* DATA */
+.data{
+    font-size:18px;
+    letter-spacing:3px;
+}
+
+.data span{
+    display:block;
+    font-size:36px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+/* ENDEREÇO */
+.endereco{
+    margin-top:15px;
+    font-size:15px;
+    opacity:0.9;
+}
+
+/* BOTÕES */
+.botoes{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:60px;
+}
+
+.botao-container{
+    text-align:center;
+}
+
+.botao{
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    border:2px dashed white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,0.1);
+    transition:0.3s;
+}
+
+.botao:hover{
+    transform:scale(1.1);
+    background:rgba(255,255,255,0.25);
+}
+
+/* Ícones */
+.botao img{
+    width:40px;
+}
+
+/* LABEL */
+.label{
+    margin-top:10px;
+    font-size:14px;
+}
+
+/* ANIMAÇÃO */
+.container{
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topo">
+    <!-- COLOQUE SUA IMAGEM AQUI -->
+    <img src="sua-imagem.jpg">
+</div>
+
+<div class="container">
+
+    <h1 class="nome">Alice</h1>
+    <div class="sub">faz 9 anos</div>
+
+    <div class="linha"></div>
+
+    <div class="data">
+        DOMINGO
+        <span>21.MARÇO.26</span>
+    </div>
+
+    <div class="linha"></div>
+
+    <div class="endereco">
+       No Abelhinha Park Buffet e Eventos 
+    Avenida João Ventura dos Santos, n° 10, Jd Baronesa - Osasco
+    </div>
+
+    <div class="botoes">
+
+        <!-- WHATSAPP -->
+        <div class="botao-container">
+            <a href="https://wa.me/5511957944097?text=Confirmo%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio!"
+               class="botao">
+               <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+            </a>
+            <div class="label">Confirmar</div>
+        </div>
+
+        <!-- LOCALIZAÇÃO -->
+        <div class="botao-container">
+            <a href="https://maps.app.goo.gl/7NGvfxnonvcHeKz3A"
+               class="botao">
+               <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+            </a>
+            <div class="label">Localização</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
